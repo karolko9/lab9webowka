@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mat-mdc-select-panel {
+  background-color: white !important;
+}
+
+.mat-mdc-option {
+  background-color: white !important;
+}
+
+.mat-mdc-option:hover:not(.mdc-list-item--disabled) {
+  background-color: rgba(0, 0, 0, 0.04) !important;
+}
+
+.mat-mdc-option.mat-mdc-option-active {
+  background-color: rgba(0, 0, 0, 0.08) !important;
+}
+
+.mat-mdc-select-panel, .mat-mdc-autocomplete-panel {
+  box-shadow: 0 2px 4px rgba(0,0,0,.2) !important;
+}

@@ -1,0 +1,17 @@
+<div class="summary-container">
+  <mat-card appearance="outlined">
+    <mat-card-header>
+      <mat-card-title>Summary</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="summary-item">
+        <span>Total Animals:</span>
+        <span class="count">{{ totalAnimals$ | async }}</span>
+      </div>
+      <div class="summary-item">
+        <span>Favorite Animals:</span>
+        <span class="count">{{ totalFavorites$ | async }}/3</span>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

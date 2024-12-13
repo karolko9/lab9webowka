@@ -1,0 +1,14 @@
+{
+    "Samochody": [
+      { "nazwa": "Toyota", "marka": "Toyota" },
+      { "nazwa": "Fiat", "marka": "Fiat" }
+    ],
+    "Słodycze": [
+      { "nazwa": "Czekolada" },
+      { "nazwa": "Baton" }
+    ],
+    "Rowery": [
+      { "nazwa": "Trek" }
+    ]
+  }
+  

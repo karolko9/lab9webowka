@@ -1,0 +1,43 @@
+<div class="animal-list-container">
+  <div class="filters">
+    <form [formGroup]="filterForm">
+      <mat-form-field>
+        <mat-label>Filter by Categories</mat-label>
+        <mat-select formControlName="selectedCategories" multiple>
+          <mat-option *ngFor="let category of categories$ | async" [value]="category">
+            {{category}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </form>
+  </div>
+
+  <button mat-raised-button color="primary" (click)="openAnimalForm()">
+    Add New Animal
+  </button>
+
+  <div class="animals-grid">
+    <mat-card *ngFor="let animal of animals$ | async" [class.favorite]="animal.isFavorite">
+      <mat-card-header>
+        <mat-card-title>{{animal.name}}</mat-card-title>
+        <mat-card-subtitle>{{animal.category}}</mat-card-subtitle>
+      </mat-card-header>
+      
+      <mat-card-content>
+        <p><strong>Age:</strong> {{animal.age}} years</p>
+        <p><strong>Weight:</strong> {{animal.weight}} kg</p>
+        <p><strong>Favorite Food:</strong> {{animal.favoriteFood}}</p>
+      </mat-card-content>
+
+      <mat-card-actions>
+        <button mat-button (click)="openAnimalForm(animal)">EDIT</button>
+        <button mat-button color="warn" (click)="deleteAnimal(animal.id!)">DELETE</button>
+        <button mat-icon-button 
+                [color]="animal.isFavorite ? 'warn' : ''" 
+                (click)="toggleFavorite(animal)">
+          <mat-icon>favorite</mat-icon>
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

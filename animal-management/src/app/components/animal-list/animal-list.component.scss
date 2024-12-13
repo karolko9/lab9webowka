@@ -1,0 +1,36 @@
+.animal-list-container {
+  padding: 20px;
+
+  .filters {
+    margin-bottom: 20px;
+    
+    mat-form-field {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+
+  .animals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+
+    mat-card {
+      &.favorite {
+        background-color: rgba(255, 192, 203, 0.2);
+        border: 2px solid #ff4081;
+      }
+
+      mat-card-content {
+        margin-top: 16px;
+      }
+
+      mat-card-actions {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px;
+      }
+    }
+  }
+}

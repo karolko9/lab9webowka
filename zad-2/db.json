@@ -1,0 +1,43 @@
+{
+  "animals": [
+    {
+      "id": "1",
+      "name": "Fluffy",
+      "category": "Cat",
+      "age": 3,
+      "weight": 4.5,
+      "favoriteFood": "Fish",
+      "isFavorite": false
+    },
+    {
+      "id": "9667",
+      "name": "asdf",
+      "category": "dfg",
+      "age": 12,
+      "weight": 4,
+      "favoriteFood": "vd",
+      "isFavorite": true
+    },
+    {
+      "id": "e4c6",
+      "name": "fsdfs",
+      "category": "Hamster",
+      "age": 1,
+      "weight": 1,
+      "favoriteFood": "g",
+      "isFavorite": true
+    }
+  ],
+  "categories": {
+    "data": [
+      "Cat",
+      "Dog",
+      "Bird",
+      "Fish",
+      "Hamster",
+      "sdf",
+      "sdf",
+      "dfg"
+    ]
+  }
+}

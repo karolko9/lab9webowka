@@ -1,0 +1,11 @@
+{
+    "Samochody": [
+      { "nazwa": "Fiat", "marka": "BMW" },
+      { "nazwa": "Opel", "marka": "Opel" }
+    ],
+    "Słodycze": [
+      { "nazwa": "Czekolada" },
+      { "nazwa": "Cukierki" }
+    ]
+  }
+  

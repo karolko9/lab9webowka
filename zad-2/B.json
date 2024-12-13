@@ -1,0 +1,10 @@
+{
+    "Samochody": [
+      { "nazwa": "Fiat", "marka": "Mercedes" }
+    ],
+    "Rowery": [
+      { "nazwa": "Kross" },
+      { "nazwa": "Merida" }
+    ]
+  }
+  
